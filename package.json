@@ -1,0 +1,22 @@
+{
+  "name": "buy_sesame",
+  "version": "1.0.0",
+  "description": "MERN shopping cart app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Renuja99/buy-sesame.git"
+  },
+  "author": "Renuja De Costa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Renuja99/buy-sesame/issues"
+  },
+  "homepage": "https://github.com/Renuja99/buy-sesame#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
