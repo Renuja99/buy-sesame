@@ -5,7 +5,7 @@ const products = [
     description:
       'Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working',
     brand: 'Apple',
-    category: 'Electronics',
+    category: 'mechatronics',
     price: 89.99,
     countInStock: 0,
     rating: 4.5,
