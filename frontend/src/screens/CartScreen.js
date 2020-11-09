@@ -4,6 +4,7 @@ import { useDispatch, useSelector} from 'react-redux'
 import {Row, Col, ListGroup, Image, Form, Button, Card } from 'react-bootstrap'
 import Message from '../components/Message'
 import { addToCart ,removeFromCart } from '../actions/cartActions'
+import '../OtherScreens.css'
 
 const CartScreen = ({match, location, history}) => {
     
@@ -37,7 +38,7 @@ const CartScreen = ({match, location, history}) => {
     return (
         <Row>
             <Col md={8}>
-                <h1>Shopping Cart</h1>
+                <div className="space"><h1>Shopping Cart</h1></div>
                 {cartItems.length === 0 ? <Message>Your cart is empty <Link to='/'>Go back </Link>
                 </Message>: (
                     <ListGroup variant ='flush'>
@@ -74,7 +75,7 @@ const CartScreen = ({match, location, history}) => {
                 )}
             </Col>
             <Col md={4}>
-                <Card>
+                <Card className="space" >
                     <ListGroup variant='flush'>
                         <ListGroup.Item>
                             <h4><strong>Subtotal ({cartItems.reduce((acc, item)=>acc + item.qty,0) }) items</strong></h4>

@@ -1,42 +1,85 @@
-import React, {  useEffect  } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import {Row, Col} from 'react-bootstrap'
-import Product from '../components/Product'
-import Message from '../components/Message'
-import Loader from '../components/Loader'
-import { listProducts } from '../actions/productActions'
-
+import {Carousel } from 'react-bootstrap'
+import HomeCategories from '../components/HomeCategories'
+import { Container, Row, Col } from 'react-bootstrap';
+import '../HomeScreen.css'
 
 
 const HomeScreen = () => {
 
-   const dispatch = useDispatch()
 
-   const productList = useSelector(state => state.productList)
-   const{ loading , error, products } = productList
+    return (      
+       <div className="home"> 
+            <div className="home__container">
+                <Carousel>
+                    <Carousel.Item>
+                    <img className="home__image " src="/images/Carousel1.jpg" alt=""/>
 
-    useEffect(() =>{
-       
-       dispatch(listProducts())  //fires a response to the backend..
-    
-    },[dispatch])
+                    </Carousel.Item>
+                    <Carousel.Item>
+                    <img className="home__image " src="/images/Carousel2.jpg" alt=""/>
 
+                    </Carousel.Item>
+                    <Carousel.Item>
+                    <img className="home__image " src="/images/Carousel3.jpg" alt=""/>
 
-    return (
-        <>
-          <h1>Latest products</h1>
-    {loading ? ( <Loader />) : error ? <Message variant = 'danger'>{error}</Message>:  
-          <Row>
-              {products.map((product) =>(
-                  <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
-                    <Product product={product}/>
-                  </Col>
-              ))}
-          </Row>}
-        
+                    </Carousel.Item>
+                    <Carousel.Item>
+                    <img className="home__image " src="/images/Carousel4.jpg" alt=""/>
+
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                    <img className="home__image " src="/images/Carousel5.jpg" alt=""/>
+
+                    </Carousel.Item>
+                    <Carousel.Item>
+                    <img className="home__image " src="/images/Carousel6.jpg" alt=""/>
+
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                    <img className="home__image " src="/images/Carousel7.jpg" alt=""/>
+
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                    <img className="home__image " src="/images/Carousel8.jpg" alt=""/>
+
+                    </Carousel.Item>
             
-        </>
+
+                </Carousel>
+                <Container>
+                    <Row>
+                    <Col sm={12} md={6} lg={6} xl={4}><HomeCategories direct='/electronics' imageLink="/images/electronics.png"/>
+                    </Col>
+                    <Col sm={12} md={6} lg={6} xl={4}><HomeCategories imageLink="/images/airpods.jpg" rounded/> </Col>
+                    <Col sm={12} md={6} lg={6} xl={4}><HomeCategories /> </Col>
+                    
+                   </Row>
+                <Row>
+                
+                <Col sm={12} md={6} lg={6} xl={6}> <HomeCategories /></Col>
+                
+                <Col sm={12} md={6} lg={6} xl={6}> <HomeCategories /></Col>
+
+                     
+                 </Row>
+                <Row>
+                <Col sm={12} md={6} lg={6} xl={4}><HomeCategories /></Col>
+                <Col sm={12} md={6} lg={6} xl={4}><HomeCategories /></Col>
+                <Col sm={12} md={6} lg={6} xl={4}><HomeCategories /></Col>
+                 
+
+                 </Row>
+                 </Container>
+            
+            </div>
+            
+             
+            
+
+       </div> 
     )
 }
-
 export default HomeScreen

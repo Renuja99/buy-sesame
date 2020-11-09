@@ -19,3 +19,12 @@ h2 {
 .rating span {
   margin: 0.1rem;
 }
+
+.header {
+  height: 60px;
+  align-items: center;
+}
+
+.categories {
+  background-color: aliceblue;
+}

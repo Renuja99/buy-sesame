@@ -7,6 +7,7 @@ import './bootstrap.min.css';
 import HomeScreen from './screens/HomeScreen'
 import ProductScreen from './screens/ProductScreen'
 import CartScreen from './screens/CartScreen'
+import ElectronicsScreen from './screens/ElectronicsScreen'
 
 const App = () => {
   return (
@@ -15,8 +16,10 @@ const App = () => {
       
       
       <main className='py-3' >
-      <Container>
+      
         <Route path='/' component ={HomeScreen} exact/>
+      <Container>
+        <Route path='/electronics' component ={ElectronicsScreen}/>
         <Route path='/product/:id' component ={ProductScreen} />
         <Route path='/cart/:id?' component={CartScreen} />
       </Container>

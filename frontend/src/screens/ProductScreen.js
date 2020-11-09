@@ -6,6 +6,7 @@ import Rating from '../components/Rating'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 import {listProductDetails } from '../actions/productActions'
+import '../OtherScreens.css'
 
 
 const ProductScreen = ({history, match}) => {
@@ -30,7 +31,8 @@ const ProductScreen = ({history, match}) => {
     
     return (
         <>
-        <Link className = 'btn btn-light my-3' to='/'> Go Back </Link>
+        <div className="space"><Link className = 'btn btn-light my-3 checkout' to='/'> Go Back </Link></div>
+         
     {loading ? <Loader/>: error ? <Message variant='danger'>{error}</Message>:(
 
             <Row>
