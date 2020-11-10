@@ -1,14 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Card } from 'react-bootstrap'
+import { Image,   Button , Card} from 'react-bootstrap'
+import '../Categories.css'
 
 const HomeCategories = (props) => {
     return (
         <div className="categories">
          
-         <Card className ='my-3 p-3 rounded'>
+         {/* <Card className ='my-3 p-3 rounded'>
             <Link to={props.direct}>
-                <Card.Img src={props.imageLink} variant= 'top'/>
+                <Card.Img src= variant= 'top'/>
             </Link>
             <Card.Body>
                 <Link to={`/electronics`}>
@@ -24,6 +25,16 @@ const HomeCategories = (props) => {
 
             </Card.Body>
         </Card>
+         */}
+       
+
+            <Card>
+                <Link to={props.direct}>
+                        <Image src={props.imageLink} fluid />   
+                        <div className="centered"> <Button variant="outline-info"><h5>Info</h5></Button>{' '}</div>
+                </Link>
+           
+                </Card>
         
             
         </div>

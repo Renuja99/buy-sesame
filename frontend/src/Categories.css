@@ -1,0 +1,12 @@
+.categories {
+  text-align: center;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
