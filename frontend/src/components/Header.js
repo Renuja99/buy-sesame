@@ -8,7 +8,7 @@ const Header = () => {
         <Navbar fixed ="top" className="header" bg="dark" variant ="dark" expand="lg" collapseOnSelect >
             <Container>
             <LinkContainer to='/'>
-                <Navbar.Brand><i className='fas fa-money-check'>&nbsp;&nbsp;<i class="fas fa-magic">&nbsp;&nbsp;</i></i><strong>BUY  SESAME</strong>&nbsp;&nbsp;<i class="fas fa-hat-wizard"></i> </Navbar.Brand>
+                <Navbar.Brand><i className="fas fa-magic">&nbsp;&nbsp;</i><strong>BUY  SESAME</strong>&nbsp;&nbsp;<i className="fas fa-hat-wizard"></i> </Navbar.Brand>
             </LinkContainer>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
