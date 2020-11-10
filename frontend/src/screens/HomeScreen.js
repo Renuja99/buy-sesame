@@ -9,8 +9,9 @@ const HomeScreen = () => {
 
     return (      
        <div className="home"> 
-            <div className="home__container">
-                <Carousel>
+            <div className="home__carousel">
+                
+                <Carousel  >
                     <Carousel.Item>
                     <img className="home__image " src="/images/Carousel1.jpg" alt=""/>
 
@@ -46,11 +47,11 @@ const HomeScreen = () => {
                     <img className="home__image " src="/images/Carousel8.jpg" alt=""/>
 
                     </Carousel.Item>
-            
-
-                </Carousel>
-                <Container>
-                    <Row>
+                    <Container className="home__rows">
+                    
+                    
+                    <Row >
+                    
                 <Col sm={12} md={4} lg={3} xl={3}><HomeCategories direct='/electronics' imageLink="/images/electronics.png"/></Col>
                 <Col sm={12} md={4} lg={3} xl={3}><HomeCategories direct='/electronics' imageLink="/images/airpods.jpg" /> </Col>
                 <Col sm={12} md={4} lg={3} xl={3}><HomeCategories direct='/electronics' imageLink="/images/airpods.jpg" /> </Col>
@@ -76,8 +77,14 @@ const HomeScreen = () => {
                  
 
                  </Row>
-                 </Container>
-            
+                 
+               
+                    
+                
+               
+                </Container>
+                </Carousel>
+                
             </div>
             
              

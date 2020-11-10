@@ -24,3 +24,7 @@ h2 {
   height: 60px;
   align-items: center;
 }
+
+header {
+  background-color: black;
+}
