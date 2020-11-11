@@ -88,12 +88,12 @@ const getUserProfile = asyncHandler(async(req,res)=>{
 
    } else{
 
-    res.status(401)
-    throw new Error('Invalid email or password')
+    res.status(404)
+    throw new Error('User not found')
    }
 })
 
-// @desc   Get user profile
+// @desc   Update user profile
 // @route  PUT /api/users/profile
 // @access Private
 const updateUserProfile = asyncHandler(async(req,res)=>{
@@ -121,8 +121,8 @@ const updateUserProfile = asyncHandler(async(req,res)=>{
  
     } else{
  
-     res.status(401)
-     throw new Error('Invalid email or password')
+     res.status(404)
+     throw new Error('User not found')
     }
  })
  
