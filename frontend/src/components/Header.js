@@ -16,8 +16,9 @@ const Header = () => {
     }
     return (
         <header>
-        <Navbar fixed ="top" className="header" bg="dark" variant ="dark" expand="lg" collapseOnSelect >
+        <Navbar fixed ="top" className="header" bg="dark" variant ="dark" expand="lg" collapseOnSelect >  
             <Container>
+            
             <LinkContainer to='/'>
                 <Navbar.Brand><i className="fas fa-magic">&nbsp;&nbsp;</i><strong>BUY  SESAME</strong>&nbsp;&nbsp;<i className="fas fa-hat-wizard"></i> </Navbar.Brand>
             </LinkContainer>

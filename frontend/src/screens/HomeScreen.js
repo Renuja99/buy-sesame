@@ -12,6 +12,7 @@ const HomeScreen = () => {
             <div className="home__carousel">
                 
                 <Carousel  >
+                    
                     <Carousel.Item>
                     <img className="home__image " src="/images/Carousel1.jpg" alt=""/>
 
@@ -47,34 +48,32 @@ const HomeScreen = () => {
                     <img className="home__image " src="/images/Carousel8.jpg" alt=""/>
 
                     </Carousel.Item>
-                    <Container className="home__rows">
+                    <Container className="home__rows" fluid>
                     
                     
                     <Row >
-                    
-                <Col sm={12} md={4} lg={3} xl={3}><HomeCategories direct='/electronics' imageLink="/images/electronics.png"/></Col>
-                <Col sm={12} md={4} lg={3} xl={3}><HomeCategories direct='/electronics' imageLink="/images/airpods.jpg" /> </Col>
-                <Col sm={12} md={4} lg={3} xl={3}><HomeCategories direct='/electronics' imageLink="/images/airpods.jpg" /> </Col>
-                <Col sm={12} md={4} lg={3} xl={3}><HomeCategories direct='/electronics' imageLink="/images/airpods.jpg" /> </Col>
-                    
-                  
-                
-                <Col sm={12} md={4} lg={3} xl={6}> <HomeCategories direct='/electronics' imageLink="/images/airpods.jpg" /></Col>
-                
-                <Col sm={12} md={4} lg={3} xl={6}> <HomeCategories direct='/electronics' imageLink="/images/airpods.jpg" /></Col>
-
-                     
-  
-                <Col sm={12} md={4} lg={3} xl={3}><HomeCategories direct='/electronics' imageLink="/images/airpods.jpg" /></Col>
-                <Col sm={12} md={4} lg={3} xl={3}><HomeCategories direct='/electronics' imageLink="/images/airpods.jpg" /></Col>
-                <Col sm={12} md={4} lg={3} xl={3}><HomeCategories direct='/electronics' imageLink="/images/airpods.jpg" /></Col>
-                <Col sm={12} md={4} lg={3} xl={3}><HomeCategories direct='/electronics' imageLink="/images/airpods.jpg" /> </Col>
-
-                <Col sm={12} md={4} lg={3} xl={6}> <HomeCategories direct='/electronics' imageLink="/images/airpods.jpg" /></Col>
-                
-                <Col sm={12} md={4} lg={3} xl={6}> <HomeCategories direct='/electronics' imageLink="/images/airpods.jpg" /></Col>
-
+                <Col>
+                </Col> 
+                <Col xs={10}>
+               <Row>
+                <Col sm={12} md={6} lg={4} xl={3}><HomeCategories direct='/electronics' imageLink="/images/electronicsAmazon.jpg" />
+                 </Col>
+                <Col sm={12} md={6} lg={4} xl={3}><HomeCategories direct='/electronics' imageLink="/images/amazon2.png" />
                  
+                </Col>
+                <Col sm={12} md={6} lg={4} xl={3}><HomeCategories direct='/electronics' imageLink="/images/amazon3.jpg" />
+                 
+                </Col>
+                <Col sm={12} md={6} lg={4} xl={3}><HomeCategories direct='/electronics' imageLink="/images/electronicsAmazon.jpg" />
+                 
+                </Col>
+                </Row>
+            
+
+                </Col>
+
+                <Col>
+                </Col>
 
                  </Row>
                  

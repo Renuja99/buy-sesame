@@ -14,9 +14,10 @@
 }
 
 .home__rows {
-  margin-top: 25em;
+  margin-top: 20em;
 }
 
 main {
-  background-color: rgba(8, 36, 53, 0.109);
+  /* background-color: rgba(8, 36, 53, 0.109); */
+  background-color: rgb(234, 237, 237);
 }

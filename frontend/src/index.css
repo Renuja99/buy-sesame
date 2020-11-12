@@ -9,6 +9,7 @@ h3 {
 h1 {
   font-size: 1.8rem;
   padding: 1rem 0;
+  color: black;
 }
 
 h2 {
@@ -23,8 +24,4 @@ h2 {
 .header {
   height: 60px;
   align-items: center;
-}
-
-header {
-  background-color: black;
 }
