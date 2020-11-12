@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
-import { Link } from 'react-router-dom'
 import { Form , Button } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import FormContainer from '../components/FormContainer'
+import CheckoutSteps from '../components/CheckoutSteps'
 import { saveShippingAddress } from '../actions/cartActions'
 import '../OtherScreens.css'
 
@@ -73,6 +73,7 @@ const ShippingScreen = ({history}) => {
                 Continue
             </Button>
             </Form>
+            <CheckoutSteps step1 step2/>
         </FormContainer>
         
         </div>
