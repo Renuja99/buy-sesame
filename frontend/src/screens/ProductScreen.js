@@ -7,6 +7,7 @@ import Message from '../components/Message'
 import Loader from '../components/Loader'
 import {listProductDetails } from '../actions/productActions'
 import '../OtherScreens.css'
+import { black } from 'colors'
 
 
 const ProductScreen = ({history, match}) => {
@@ -101,12 +102,12 @@ const ProductScreen = ({history, match}) => {
                 <ListGroup variant ='flush'>
                     <ListGroup.Item>
                         <h3>{product.name}</h3>
-                    </ListGroup.Item>
+                    </ListGroup.Item >
                     <Rating value={product.rating} text={`${product.numReviews} reviews`}/>
                     <ListGroup.Item>
                         Price : ${product.price}
                     </ListGroup.Item>
-                    <ListGroup>
+                    <ListGroup style={listStyle}>
                         Description: {product.description}
                     </ListGroup>
 
@@ -118,6 +119,11 @@ const ProductScreen = ({history, match}) => {
        
         </>
     )
+}
+
+const listStyle = {
+
+    color: 'black',
 }
 
 export default ProductScreen

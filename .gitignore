@@ -2,6 +2,7 @@
 
 # dependencies
 node_modules
+package.json
 node_modules/
 /.pnp
 .pnp.js

@@ -15,6 +15,7 @@ h1 {
 h2 {
   font-size: 1.4rem;
   padding: 0.5rem 0;
+  color: black;
 }
 
 .rating span {
@@ -24,4 +25,14 @@ h2 {
 .header {
   height: 60px;
   align-items: center;
+}
+
+.form__label {
+  color: black !important;
+  background: rgb(246, 246, 255) !important;
+}
+
+.place__order {
+  color: whitesmoke !important;
+  background: rgb(246, 246, 255) !important;
 }

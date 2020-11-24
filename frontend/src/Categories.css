@@ -10,3 +10,30 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.customCard {
+  background: rgb(255, 255, 255) !important;
+}
+
+p:link {
+  color: black;
+}
+
+/* visited link */
+p:visited {
+  color: black;
+}
+
+/* mouse over link */
+p:hover {
+  color: black;
+}
+
+/* selected link */
+p:active {
+  color: black;
+}
+
+.categoryTitle {
+  color: black;
+}

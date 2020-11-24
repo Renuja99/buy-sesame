@@ -56,15 +56,15 @@ const HomeScreen = () => {
                 </Col> 
                 <Col xs={10}>
                <Row>
-                <Col sm={12} md={6} lg={4} xl={3}><HomeCategories direct='/electronics' imageLink="/images/electronicsAmazon.jpg" />
+                <Col sm={6} md={4} lg={4} xl={3}><HomeCategories direct='/electronics' imageLink="/images/electronicsAmazon.jpg" />
                  </Col>
-                <Col sm={12} md={6} lg={4} xl={3}><HomeCategories direct='/electronics' imageLink="/images/amazon2.png" />
+                <Col sm={6} md={4} lg={4} xl={3}><HomeCategories direct='/electronics' imageLink="/images/amazon2.png" />
                  
                 </Col>
-                <Col sm={12} md={6} lg={4} xl={3}><HomeCategories direct='/electronics' imageLink="/images/amazon3.jpg" />
+                <Col sm={6} md={4} lg={4} xl={3}><HomeCategories direct='/electronics' imageLink="/images/amazon3.jpg" />
                  
                 </Col>
-                <Col sm={12} md={6} lg={4} xl={3}><HomeCategories direct='/electronics' imageLink="/images/electronicsAmazon.jpg" />
+                <Col sm={6} md={4} lg={4} xl={3}><HomeCategories direct='/electronics' imageLink="/images/electronicsAmazon.jpg" />
                  
                 </Col>
                 </Row>

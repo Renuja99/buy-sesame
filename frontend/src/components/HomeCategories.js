@@ -7,17 +7,17 @@ const HomeCategories = (props) => {
     return (
         <div className="categories">
          
-        <Card className ='my-3 p-3 rounded' variant='light'>
+        <Card bg='light' text='dark' className='customCard my-3 p-3 rounded' variant='light'>
             <Link to={props.direct}>
-            <Card.Text><h5><strong>Card Title</strong></h5>  </Card.Text>
+            <Card.Text text='dark'  as='div'>
+                        <p className='categoryTitle'><h5><strong>Category</strong></h5></p>
+             </Card.Text>
                 <Card.Img src={props.imageLink} variant= 'top'/>
                 
             </Link>
             <Card.Body>
                 <Link to={`/electronics`}>
-                    <Card.Title as='div'>
-                        
-                    </Card.Title>
+                    
                 </Link>
 
                 <Card.Text as='div'>

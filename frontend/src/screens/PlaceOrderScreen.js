@@ -33,7 +33,7 @@ const PlaceOrderScreen = () => {
     return (
         <div className="space">
             <Row>
-                <Col md={8}>
+                <Col md={8} >
                     <ListGroup variant='flush'>
                         <ListGroup.Item>
                             <h2>Shipping</h2>
@@ -79,7 +79,7 @@ const PlaceOrderScreen = () => {
                     </ListGroup>
                 </Col>
                 <Col md={4}>
-                    <Card>
+                    <Card className='place__order'>
                         <ListGroup variant='flush'>
                             <ListGroup.Item>
                                 <h2>Order Summary</h2>

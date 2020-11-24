@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Form , Button, Col } from 'react-bootstrap'
+import { Form , Button, Col, Card , Container} from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import FormContainer from '../components/FormContainer'
 import CheckoutSteps from '../components/CheckoutSteps'
@@ -29,9 +29,11 @@ const PaymentScreen = ({history}) => {
     return (
         <div className="space">
         <FormContainer >
-            <h1>Payment Method</h1>
+            
             <Form onSubmit ={submitHandler}>
-                
+                <Card className='form__label'>
+                <Container>
+                <h1>Payment Method</h1>
                 <Form.Group>
                     <Form.Label as='legend'> Select Method</Form.Label>
                
@@ -40,6 +42,11 @@ const PaymentScreen = ({history}) => {
                        <Form.Check type='radio' label='PayPal or Credit card' id='PayPal' name='paymentMethod' value='PayPal' checked onChange={(e) => setPaymentMethod(e.target.value)}></Form.Check>
                     </Col>
                 </Form.Group>
+                </Container>
+
+
+
+                </Card>
                 <Button type='submit' variant='primary'>
                     Continue
                 </Button>
